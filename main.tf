@@ -6,8 +6,6 @@ provider "rancher2" {
   secret_key = "${var.rancher2_secret_key}"
 }
 
-resource "rancher2_environment" "demo" {
-  name = "blog-demo"
-  description = "Demonstration environment"
-  orchestration = "cattle"
+data "rancher2_cluster" "quickstart" {
+  name = "quickstart"
 }
