@@ -7,6 +7,6 @@ provider "rancher2" {
   insecure = true
 }
 
-data "rancher2_cluster" "quickstart" {
-  name = "quickstart"
+data "rancher2_cluster" "sandbox" {
+  name = "sandbox"
 }
